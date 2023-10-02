@@ -1,0 +1,21 @@
+#+title: Kali
+#+BEGIN_SRC markdown
+* Step1
+** Download qemu image
+wget https://cdimage.kali.org/kali-2023.3/kali-linux-2023.3-qemu-amd64.7z
+curl -O https://cdimage.kali.org/kali-2023.3/kali-linux-2023.3-qemu-amd64.7z
+* Step2
+** Qemu KVM Start Kali
+qemu-system-x86_64 \
+-enable-kvm \
+-m 4G \
+-smp 2 \
+-hda kali-linux-2023.3-qemu-amd64.qcow2 \
+-boot c
+#+END_SRC
+* Step 3
+** Login Information
+#+BEGIN_SRC
+username: kali
+password: kali
+ #+END_SRC
